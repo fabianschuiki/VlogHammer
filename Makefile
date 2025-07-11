@@ -19,8 +19,8 @@
 # All supported SYN_LIST tags: vivado quartus xst yosys verific dc lec circt
 # All supported SIM_LIST tags: xsim isim modelsim icarus verilator yosim
 
-SYN_LIST     := vivado yosys
-SIM_LIST     := xsim modelsim icarus verilator yosim
+SYN_LIST     := circt
+SIM_LIST     := verilator
 RTL_LIST     := $(shell ls rtl 2> /dev/null | cut -f1 -d.)
 REPORT_LIST  := $(shell ls $(addprefix check_,$(SYN_LIST)) 2> /dev/null | grep '\.err$$' | cut -f1 -d. | sort -u)
 ISE_SETTINGS := /opt/Xilinx/14.7/ISE_DS/settings64.sh
