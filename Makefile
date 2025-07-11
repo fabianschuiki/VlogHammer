@@ -16,7 +16,7 @@
 #  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 #
 
-# All supported SYN_LIST tags: vivado quartus xst yosys verific dc lec
+# All supported SYN_LIST tags: vivado quartus xst yosys verific dc lec circt
 # All supported SIM_LIST tags: xsim isim modelsim icarus verilator yosim
 
 SYN_LIST     := vivado yosys
