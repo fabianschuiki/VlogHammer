@@ -496,7 +496,7 @@ fi
 			$y =~ /^(module|input|wire|reg|integer|localparam|output|assign|signed|if|else|for|begin|end|case|endcase|task|endtask|function|endfunction|always|initial|endmodule|\$(display|unsigned|signed))$/ ? "#080" : "#008", $y)!eg' )</small></pre>"
 
 	echo "<!-- VALUES:BEGIN -->"
-	python ../../scripts/valtab.py ${SIM_LIST}
+	python2 ../../scripts/valtab.py ${SIM_LIST}
 	echo "<!-- VALUES:END -->"
 	echo "<!-- REPORT:END -->"
 } > report.html
